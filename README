@@ -1,0 +1,37 @@
+This repository is used to track my Data Acquisition library (DAQ)
+
+If you find any bugs or have a feature request for this ebuild you can either
+submit an "issue" at this Github repository or open a bug on Gentoo's bugzilla
+site (https://bugs.gentoo.org). If you submit a bug through bugzilla, please 
+add my email address to the CC list.
+
+You are welcome to use this repository as a local Portage overlay. 
+
+Instructions for adding this repository as a local overlay:
+-----------------------------------------------------------
+
+emerge -va git
+
+cd /usr/local/src
+
+mkdir -p wally3514/net-libs
+
+cd wally3514/net-libs
+
+git clone http://wally3514@github.com/wally3514/daq.git
+
+vi /etc/make.conf
+	edit to include: PORTDIR_OVERLAY="/usr/local/src/wally3514"
+
+After the initial cloning you can simply do the following to updated the overlay:
+
+git pull http://wally3514@github.com/wally3514/daq.git
+
+
+If you would like to know when change are commited to this repository you can
+follow the twitter account @Wally3514_repo.
+
+Thanks, and happy snorting!
+
+Email:   jason.r.wallace@gmail.com
+Twitter: @Wally3514
